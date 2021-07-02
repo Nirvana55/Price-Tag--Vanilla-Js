@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/all.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./javascript/main.js" defer></script>
+	</head>
+	<body>
+		<header class="heading">
+			<div class="container">
+				<div class="billing__header">
+					<h1 class="heading__description">Simple, traffic-based pricing</h1>
+					<p class="heading__explanation">Sign-up for our 30-day trial.</p>
+					<p class="heading__explanation">No credit card required</p>
+				</div>
+				<div class="billing__card">
+					<div class="card__billing--details">
+						<p class="page__views">
+							<span id="page__views">100K</span> pageviews
+						</p>
+						<div class="price__slider">
+							<input
+								type="range"
+								min="0"
+								max="4"
+								value="2"
+								step="1"
+								class="slider"
+								id="my__Range"
+							/>
+						</div>
+						<div class="money">
+							<h4 id="money__description">$16.00</h4>
+							<span id="money__span">&nbsp; / month</span>
+						</div>
+					</div>
+					<div class="billing">
+						<p id="monthly">Monthly Billing</p>
+						<label class="switch">
+							<input type="checkbox" / id = "checkbox" class="input__check">
+							<span class="button__slider" id="button__slider"></span>
+						</label>
+						<p id="yearly">
+							Yearly Billing
+							<span id="discount"
+								>-25% <span id="discount__span">discount</span></span
+							>
+						</p>
+					</div>
+					<hr id="line__breaker" />
+					<div class="card__offer--details">
+						<div class="all__offer">
+							<div class="offer">
+								<img src="./images/icon-check.svg" alt="icon-check" />
+								<span id="offer__span">Unlimited websites</span>
+							</div>
+							<div class="offer">
+								<img src="./images/icon-check.svg" alt="icon-check" />
+								<span id="offer__span">100%data ownership</span>
+							</div>
+							<div class="offer">
+								<img src="./images/icon-check.svg" alt="icon-check" />
+								<span id="offer__span">E-mail reports</span>
+							</div>
+						</div>
+						<div class="button">
+							<button class="start__Trial">Start my trial</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</body>
+</html>

@@ -1,0 +1,392 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: "Manrope", sans-serif;
+}
+
+p {
+	font-family: "Manrope", sans-serif;
+}
+
+.heading {
+	background-color: hsl(230, 100%, 99%);
+	padding: 0 0 80px 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* ------Billing System--------- */
+
+.billing__header {
+	text-align: center;
+	background-image: url(../images/pattern-circles.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	margin-top: 2em;
+	height: 145px;
+}
+
+.heading__description {
+	padding-top: 1em;
+	position: relative;
+	z-index: 1;
+
+	font-size: 21px;
+	font-weight: 700;
+	color: hsl(227, 35%, 25%);
+	letter-spacing: 0.5px;
+}
+
+.heading__explanation {
+	font-size: 13px;
+	color: hsl(225, 20%, 60%);
+
+	line-height: 1em;
+	position: relative;
+	z-index: 1;
+}
+
+/* ------Billing Card -------- */
+
+.billing__card {
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	text-align: center;
+
+	width: 80%;
+	margin-top: 1.5em;
+}
+
+.page__views {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	color: hsl(225, 20%, 60%);
+	text-transform: uppercase;
+
+	padding: 3em 0;
+}
+
+.slider {
+	width: 90%;
+	height: 10px;
+	cursor: pointer;
+	background-color: hsl(223, 23%, 94%);
+	border-radius: 20px;
+	outline: none;
+	opacity: 0.9;
+
+	transition: opacity 0.2s;
+	-webkit-appearance: none;
+	-webkit-transition: 0.2s;
+}
+
+.slider::-moz-range-thumb {
+	width: 35px;
+	height: 32px;
+	border-radius: 50%;
+	outline: none;
+	border: 1px solid hsl(174, 86%, 45%);
+
+	background-color: hsl(174, 86%, 45%);
+	background-image: url(../images//icon-slider.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-appearance: none;
+}
+
+.slider::-moz-range-progress {
+	background-color: hsl(174, 86%, 45%);
+	opacity: 0.5;
+
+	height: 10px;
+	border-radius: 20px;
+}
+
+/*---------------- Money--------- */
+.money {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#money__description {
+	font-family: "Manrope", sans-serif;
+	color: hsl(227, 35%, 25%);
+	font-size: 20px;
+}
+
+#money__span {
+	color: hsl(225, 20%, 60%);
+	font-size: 13px;
+	font-weight: 500;
+	font-family: "Manrope", sans-serif;
+
+	align-self: center;
+	padding-left: 0.5em;
+}
+
+/* ----------Money End----------- */
+
+/* ----------Billing------------- */
+.billing {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#monthly,
+#yearly {
+	color: hsl(225, 20%, 60%);
+	font-size: 12px;
+	font-weight: 500;
+	font-family: "Manrope", sans-serif;
+}
+
+.switch {
+	position: relative;
+	width: 60px;
+	height: 34px;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.button__slider {
+	position: absolute;
+	height: 21px;
+	width: 38px;
+
+	transition: 0.4s;
+	background-color: hsl(223, 50%, 87%);
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.button__slider::before {
+	content: "";
+	position: absolute;
+	left: 4px;
+	bottom: 4px;
+	height: 13px;
+	width: 13px;
+
+	background-color: white;
+	transition: 0.4s;
+	-webkit-transition: 0.7s;
+	border-radius: 50%;
+}
+
+.input__check:checked + .button__slider::before {
+	-webkit-transform: translateX(15px);
+}
+
+.input__check:checked + .button__slider {
+	background-color: hsl(174, 86%, 45%);
+}
+
+#discount {
+	color: hsl(15, 100%, 70%);
+	font-size: 10px;
+	font-family: "Manrope", sans-serif;
+
+	border-radius: 12px;
+	background-color: hsl(15, 100%, 89%);
+	border: 15px;
+	padding: 0.3em 0.5em;
+	margin-left: 0.5em;
+	cursor: pointer;
+}
+
+#discount__span {
+	visibility: hidden;
+
+	display: none;
+}
+
+/* ----------Billing End--------- */
+
+#line__breaker {
+	border: 0.5px solid hsl(221, 100%, 97%);
+}
+
+/* ----------Card Offer Deails--- */
+#offer__span {
+	color: hsl(225, 20%, 60%);
+	font-size: 12px;
+	font-weight: 500;
+	font-family: "Manrope", sans-serif;
+
+	line-height: 2.5em;
+}
+
+.offer img {
+	margin-right: 0.8em;
+}
+
+/* -----Card Offer Deails End--- */
+
+/* -------Trail Button------ */
+.start__Trial {
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+	padding: 1em 3em;
+	border-radius: 30px;
+
+	color: hsl(223, 50%, 87%);
+	border: 1px solid hsl(227, 35%, 25%);
+	background-color: hsl(227, 35%, 25%);
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	transition: 0.8s;
+
+	cursor: pointer;
+}
+.start__Trial:hover {
+	background-color: hsl(223, 50%, 87%);
+	color: hsl(227, 35%, 25%);
+	transform: scale(1.1);
+
+	border: 1px solid hsl(223, 50%, 87%);
+}
+
+/* -------Trail Button------ */
+
+@media only screen and (min-width: 800px) {
+	.heading {
+		background-image: url(../images/bg-pattern.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		padding: 0 0 60px 0;
+	}
+
+	.billing__card {
+		width: 50%;
+
+		min-width: 600px;
+	}
+
+	/* --------Billing header start------ */
+
+	.billing__header {
+		margin-top: 1em;
+	}
+
+	.heading__description {
+		font-size: 25px;
+	}
+
+	.heading__explanation {
+		display: inline-flex;
+
+		margin: 0;
+	}
+
+	/* ------------Billing header end------- */
+
+	/* ---------Billing Card details------- */
+
+	.card__billing--details {
+		display: grid;
+		grid-template-columns: 300px 300px;
+
+		align-items: center;
+	}
+
+	.page__views {
+		font-size: 13px;
+	}
+
+	.price__slider {
+		grid-column: 1/ 3;
+		grid-row: 2 /3;
+
+		padding: 1em 0;
+	}
+
+	.money {
+		grid-column: 2 / 3;
+		grid-row: 1;
+	}
+
+	#money__description {
+		font-size: 33px;
+	}
+
+	.slider {
+		width: 73%;
+	}
+
+	/* -------Billing card  details end--------- */
+
+	.billing {
+		padding: 1em 0;
+	}
+
+	.card__offer--details {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 0.5em;
+	}
+
+	#discount {
+		transition: 0.8s;
+	}
+
+	#discount:hover {
+		background-color: white;
+		border: 1px solid hsl(223, 50%, 87%);
+	}
+
+	#discount__span {
+		visibility: visible;
+		display: contents;
+	}
+
+	/* -----------Billing End------------------ */
+
+	.start__Trial {
+		padding: 1em 3em;
+		cursor: pointer;
+	}
+
+	.offer {
+		flex-direction: column;
+	}
+
+	.offer img {
+		margin-right: 0.5em;
+	}
+}
